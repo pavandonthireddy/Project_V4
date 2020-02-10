@@ -1,0 +1,394 @@
+Start:	2020-02-10 05:05:29.543880
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.sharpe_ratio, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 05:06:13.816401
+-1.833	 : (High+Close)
+-1.731	 : (ema(Close,20))
+-1.707	 : (mean(Open,10))
+-1.654	 : (minval(Low,10))
+-0.746	 : (covariance(Close,Open,5))
+-1.757	 : (mean(High,20))
+0.375	 : (Low/High)
+-0.857	 : (covariance(Low,Close,5))
+0.252	 : (fisher(High))
+-1.507	 : ((High*Close)-(High*Low))
+-0.586	 : (smooth((ts_rank(Open,15))))
+0.303	 : (fisher((Low+Open)))
+-1.71	 : (smooth((Low+Low)))
+-0.91	 : ((covariance(Low,Open,15))-(mean(Low,15)))
+1.038	 : (-1*((High*Open)))
+-1.679	 : (minval((smooth(Close)),5))
+-0.061	 : ((-1*((Low-Close)))-(stdev((-1*(Low)),10)))
+0.367	 : (sma((covariance((covariance(High,Close,5)),(center(Open,15))
+         ,20)),15))
+-0.666	 : (covariance((-1*(Close)),(covariance((covariance(Close,Close
+          ,10)),(1/(High)),5)),20))
+-1.98	 : (smooth((maxval((stdev(Low,20)),20))))
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.trading_engine, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 05:09:48.011288
+-1.833	 : (High+Close)
+-1.731	 : (ema(Close,20))
+-1.707	 : (mean(Open,10))
+-1.654	 : (minval(Low,10))
+-0.746	 : (covariance(Close,Open,5))
+-1.757	 : (mean(High,20))
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.Sharpe_Ratio, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 05:13:52.960464
+The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+
+ Evolution failed :<class 'ValueError'> .Please check the parameters.
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.Maximum_Drawdown, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 05:14:20.379424
+The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.Maximum_Drawdown, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 05:16:36.626135
+62.108	 : (High+Close)
+60.76	 : (ema(Close,20))
+60.527	 : (mean(Open,10))
+59.992	 : (minval(Low,10))
+83.981	 : (covariance(Close,Open,5))
+61.191	 : (mean(High,20))
+20.427	 : (Low/High)
+87.67	 : (covariance(Low,Close,5))
+29.863	 : (fisher(High))
+80.006	 : ((High*Close)-(High*Low))
+22.641	 : (smooth((ts_rank(Open,15))))
+30.558	 : (fisher((Low+Open)))
+60.434	 : (smooth((Low+Low)))
+86.687	 : ((covariance(Low,Open,15))-(mean(Low,15)))
+8.234	 : (-1*((High*Open)))
+59.981	 : (minval((smooth(Close)),5))
+33.856	 : ((-1*((Low-Close)))-(stdev((-1*(Low)),10)))
+39.327	 : (sma((covariance((covariance(High,Close,5)),(center(Open,15)
+          ),20)),15))
+90.962	 : (covariance((-1*(Close)),(covariance((covariance(Close,Close
+          ,10)),(1/(High)),5)),20))
+78.88	 : (smooth((maxval((stdev(Low,20)),20))))
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.Maximum_Drawdown, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 05:20:48.192267
+-59.996	 : (High+Close)
+-58.404	 : (ema(Close,20))
+-58.232	 : (mean(Open,10))
+-57.518	 : (minval(Low,10))
+-81.169	 : (covariance(Close,Open,5))
+-58.884	 : (mean(High,20))
+81.905	 : (Low/High)
+-85.46	 : (covariance(Low,Close,5))
+55.335	 : (fisher(High))
+-78.084	 : ((High*Close)-(High*Low))
+-17.544	 : (smooth((ts_rank(Open,15))))
+68.084	 : (fisher((Low+Open)))
+-58.206	 : (smooth((Low+Low)))
+-84.559	 : ((covariance(Low,Open,15))-(mean(Low,15)))
+162.192	 : (-1*((High*Open)))
+-57.624	 : (minval((smooth(Close)),5))
+6.643	 : ((-1*((Low-Close)))-(stdev((-1*(Low)),10)))
+118.579	 : (sma((covariance((covariance(High,Close,5)),(center(Open,15
+           )),20)),15))
+-87.044	 : (covariance((-1*(Close)),(covariance((covariance(Close,Clos
+           e,10)),(1/(High)),5)),20))
+-78.118	 : (smooth((maxval((stdev(Low,20)),20))))
+-54.866	 : (fisher(((ema((covariance(Open,Close,20)),5))+(-1*((mean(Op
+           en,15)))))))
+-5.352	 : ((covariance((median((kurtosis(Open,10)),5)),(1/(Close)),5))
+          /(((gauss_filter(High,15))-(Open+High))-((High/Close)*(covar
+          iance(High,Low,10)))))
+-42.529	 : (invfisher((rank((rank(((Low+High)*(smooth(Low)))))))))
+Evolution: 0% complete 
+ 
+ 
+-59.484	 : Open
+47.614	 : (fisher(Close))
+-58.568	 : (smooth(Close))
+-59.282	 : Low
+-73.295	 : (stdev(High,5))
+-59.282	 : Low
+-59.484	 : Open
+-59.886	 : High
+-71.199	 : (Close-Low)
+-59.484	 : Open
+-59.886	 : High
+47.362	 : (fisher(Low))
+-59.886	 : High
+-58.568	 : (smooth(Close))
+-60.128	 : Close
+-59.484	 : Open
+-59.484	 : Open
+182.862	 : (Low-Open)
+-60.128	 : Close
+-59.886	 : High
+0.031	 : (Open-Close)
+-59.484	 : Open
+47.614	 : (fisher(Close))
+-60.128	 : Close
+-59.886	 : High
+-59.484	 : Open
+-60.128	 : Close
+-60.128	 : Close
+-59.484	 : Open
+-59.484	 : Open
+-77.67	 : (High-Low)
+-59.886	 : High
+-58.206	 : (smooth(Low))
+-59.886	 : High
+88.942	 : (-1*(High))
+-23.847	 : (skew(Low,5))
+-18.84	 : (1/(High))
+2.226	 : (Open/High)
+-19.264	 : (1/(Open))
+-58.714	 : (smooth(High))
+-18.84	 : (1/(High))
+-59.282	 : Low
+-58.568	 : (smooth(Close))
+-60.128	 : Close
+-59.282	 : Low
+-59.886	 : High
+-59.886	 : High
+-60.128	 : Close
+-60.128	 : Close
+-58.568	 : (smooth(Close))
+-60.128	 : Close
+-59.484	 : Open
+207.984	 : (Low-High)
+-59.484	 : Open
+-59.886	 : High
+-60.128	 : Close
+-59.484	 : Open
+55.335	 : (fisher(High))
+-58.714	 : (smooth(High))
+-60.128	 : Close
+-60.128	 : Close
+-58.384	 : (gauss_filter(Open,15))
+-19.264	 : (1/(Open))
+-59.886	 : High
+-60.128	 : Close
+-60.128	 : Close
+-18.567	 : (1/(Low))
+-71.199	 : (Close-Low)
+-59.282	 : Low
+-59.282	 : Low
+55.335	 : (fisher(High))
+-59.378	 : (Open+Low)
+-60.128	 : Close
+-18.567	 : (1/(Low))
+-59.886	 : High
+-57.95	 : (median(High,15))
+-59.886	 : High
+86.289	 : (-1*(Low))
+47.362	 : (fisher(Low))
+-59.886	 : High
+90.146	 : (-1*(Close))
+-58.206	 : (smooth(Low))
+-59.886	 : High
+0.031	 : (Open-Close)
+55.335	 : (fisher(High))
+Evolution: 2% complete 
+ 
+ 
+-59.886	 : High
+55.335	 : (fisher(High))
+81.905	 : (Low/High)
+55.335	 : (fisher(High))
+-59.484	 : Open
+-59.886	 : High
+-59.886	 : High
+-59.282	 : Low
+-60.128	 : Close
+86.289	 : (-1*(Low))
+90.146	 : (-1*(Close))
+-59.886	 : High
+-59.484	 : Open
+-58.206	 : (smooth(Low))
+-58.568	 : (smooth(Close))
+-18.567	 : (1/(Low))
+-59.886	 : High
+-60.128	 : Close
+-59.484	 : Open
+47.614	 : (fisher(Close))
+-60.128	 : Close
+-59.484	 : Open
+-59.886	 : High
+-59.484	 : Open
+-58.568	 : (smooth(Close))
+-59.484	 : Open
+-59.378	 : (Open+Low)
+-59.886	 : High
+-59.886	 : High
+-58.173	 : (gauss_filter(Close,20))
+87.152	 : (-1*(Open))
+-59.282	 : Low
+-59.282	 : Low
+47.362	 : (fisher(Low))
+55.335	 : (fisher(High))
+47.614	 : (fisher(Close))
+90.146	 : (-1*(Close))
+-15.266	 : (kurtosis(High,15))
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.Total_Return, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 05:39:48.743956
+name 'datasets' is not defined
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.Information_Ratio, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 05:40:42.553038
+-0.66	 : (High+Close)
+-0.64	 : (ema(Close,20))
+-0.638	 : (mean(Open,10))
+-0.633	 : (minval(Low,10))
+-0.75	 : (covariance(Close,Open,5))
+-0.645	 : (mean(High,20))
+-0.098	 : (Low/High)
+-0.823	 : (covariance(Low,Close,5))
+-0.148	 : (fisher(High))
+-0.83	 : ((High*Close)-(High*Low))
+-0.39	 : (smooth((ts_rank(Open,15))))
+-0.121	 : (fisher((Low+Open)))
+-0.643	 : (smooth((Low+Low)))
+-0.819	 : ((covariance(Low,Open,15))-(mean(Low,15)))
+0.031	 : (-1*((High*Open)))
+-0.633	 : (minval((smooth(Close)),5))
+-0.292	 : ((-1*((Low-Close)))-(stdev((-1*(Low)),10)))
+-0.026	 : (sma((covariance((covariance(High,Close,5)),(center(Open,15)
+          ),20)),15))
+-0.765	 : (covariance((-1*(Close)),(covariance((covariance(Close,Close
+          ,10)),(1/(High)),5)),20))
+-0.87	 : (smooth((maxval((stdev(Low,20)),20))))
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.Information_Ratio, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 05:44:09.368099
+0.0	 : (High+Close)
+0.0	 : (ema(Close,20))
+0.0	 : (mean(Open,10))
+0.0	 : (minval(Low,10))
+0.009	 : (covariance(Close,Open,5))
+0.0	 : (mean(High,20))
+0.005	 : (Low/High)
+0.009	 : (covariance(Low,Close,5))
+0.003	 : (fisher(High))
+0.002	 : ((High*Close)-(High*Low))
+0.0	 : (smooth((ts_rank(Open,15))))
+0.003	 : (fisher((Low+Open)))
+0.0	 : (smooth((Low+Low)))
+0.008	 : ((covariance(Low,Open,15))-(mean(Low,15)))
+0.001	 : (-1*((High*Open)))
+0.0	 : (minval((smooth(Close)),5))
+0.001	 : ((-1*((Low-Close)))-(stdev((-1*(Low)),10)))
+0.017	 : (sma((covariance((covariance(High,Close,5)),(center(Open,15))
+         ,20)),15))
+0.022	 : (covariance((-1*(Close)),(covariance((covariance(Close,Close,
+         10)),(1/(High)),5)),20))
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.Omega_Ratio, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 05:47:51.747109
+0.814	 : (High+Close)
+0.828	 : (ema(Close,20))
+0.831	 : (mean(Open,10))
+0.827	 : (minval(Low,10))
+0.85	 : (covariance(Close,Open,5))
+0.825	 : (mean(High,20))
+0.929	 : (Low/High)
+0.838	 : (covariance(Low,Close,5))
+0.924	 : (fisher(High))
+0.821	 : ((High*Close)-(High*Low))
+0.888	 : (smooth((ts_rank(Open,15))))
+0.932	 : (fisher((Low+Open)))
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.Rachev_Ratio, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 05:50:30.724206
+
+ Evolution failed :<class 'Exception'> .Please check the parameters.
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness[0m
+Start:	2020-02-10 05:52:27.902360
+-2.405	 : (High+Close)
+-2.31	 : (ema(Close,20))
+-2.284	 : (mean(Open,10))
+-2.132	 : (minval(Low,10))
+-1.237	 : (covariance(Close,Open,5))
+-2.363	 : (mean(High,20))
+0.442	 : (Low/High)
+-1.41	 : (covariance(Low,Close,5))
+0.317	 : (fisher(High))
+-2.164	 : ((High*Close)-(High*Low))
+-0.72	 : (smooth((ts_rank(Open,15))))
+0.385	 : (fisher((Low+Open)))
+-2.248	 : (smooth((Low+Low)))
+-1.181	 : ((covariance(Low,Open,15))-(mean(Low,15)))
+1.548	 : (-1*((High*Open)))
+-2.211	 : (minval((smooth(Close)),5))
+-0.057	 : ((-1*((Low-Close)))-(stdev((-1*(Low)),10)))
+0.412	 : (sma((covariance((covariance(High,Close,5)),(center(Open,15))
+         ,20)),15))
+-0.889	 : (covariance((-1*(Close)),(covariance((covariance(Close,Close
+          ,10)),(1/(High)),5)),20))
+-2.272	 : (smooth((maxval((stdev(Low,20)),20))))
+-2.132	 : (fisher(((ema((covariance(Open,Close,20)),5))+(-1*((mean(Ope
+          n,15)))))))
+-0.129	 : ((covariance((median((kurtosis(Open,10)),5)),(1/(Close)),5))
+          /(((gauss_filter(High,15))-(Open+High))-((High/Close)*(covar
+          iance(High,Low,10)))))
+-1.556	 : (invfisher((rank((rank(((Low+High)*(smooth(Low)))))))))
+
+ Evolution failed :<class 'KeyboardInterrupt'> .Please check the parameters.
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.Sortino_Ratio, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 06:00:11.911520
+-2.405	 : (High+Close)
+-2.31	 : (ema(Close,20))
+-2.284	 : (mean(Open,10))
+-2.132	 : (minval(Low,10))
+-1.237	 : (covariance(Close,Open,5))
+-2.363	 : (mean(High,20))
+0.442	 : (Low/High)
+-1.41	 : (covariance(Low,Close,5))
+0.317	 : (fisher(High))
+-2.164	 : ((High*Close)-(High*Low))
+
+ Evolution failed :<class 'KeyboardInterrupt'> .Please check the parameters.
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.Sortino_Ratio, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 06:01:03.594857
+name 'cleaned_index' is not defined
+
+ Evolution failed :<class 'NameError'> .Please check the parameters.
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.MAR_Ratio, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 06:02:11.764464
+name 'clean_index_weights' is not defined
+
+ Evolution failed :<class 'NameError'> .Please check the parameters.
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.MAR_Ratio, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 06:02:32.338655
+name 'hf' is not defined
+
+ Evolution failed :<class 'NameError'> .Please check the parameters.
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.MAR_Ratio, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 06:03:45.768606
+-0.102	 : (High+Close)
+-0.1	 : (ema(Close,20))
+-0.1	 : (mean(Open,10))
+-0.099	 : (minval(Low,10))
+-0.134	 : (covariance(Close,Open,5))
+-0.101	 : (mean(High,20))
+0.214	 : (Low/High)
+-0.147	 : (covariance(Low,Close,5))
+0.106	 : (fisher(High))
+
+ Evolution failed :<class 'KeyboardInterrupt'> .Please check the parameters.
+
+[4;33mReloaded modules[24m: hypothesisEngine, hypothesisEngine.stats, hypothesisEngine.stats.stats, hypothesisEngine.algorithm, hypothesisEngine.algorithm.parameters, hypothesisEngine.utilities, hypothesisEngine.utilities.algorithm, hypothesisEngine.utilities.algorithm.NSGA2, hypothesisEngine.utilities.fitness, hypothesisEngine.utilities.fitness.math_functions, hypothesisEngine.utilities.algorithm.state, hypothesisEngine.utilities.stats, hypothesisEngine.utilities.stats.trackers, hypothesisEngine.utilities.stats.save_plots, hypothesisEngine.utilities.stats.file_io, hypothesisEngine.utilities.log_helper, hypothesisEngine.utilities.grammar_helper, hypothesisEngine.utilities.algorithm.initialise_run, hypothesisEngine.utilities.algorithm.command_line_parser, hypothesisEngine.utilities.stats.clean_stats, hypothesisEngine.representation, hypothesisEngine.representation.grammar, hypothesisEngine.algorithm.search_loop, hypothesisEngine.fitness, hypothesisEngine.fitness.evaluation, hypothesisEngine.operators, hypothesisEngine.operators.initialisation, hypothesisEngine.representation.individual, hypothesisEngine.algorithm.mapper, hypothesisEngine.representation.tree, hypothesisEngine.utilities.representation, hypothesisEngine.utilities.representation.python_filter, hypothesisEngine.representation.derivation, hypothesisEngine.utilities.representation.check_methods, hypothesisEngine.representation.latent_tree, hypothesisEngine.scripts, hypothesisEngine.scripts.GE_LR_parser, hypothesisEngine.utilities.algorithm.general, hypothesisEngine.operators.subtree_parse, hypothesisEngine.algorithm.step, hypothesisEngine.operators.crossover, hypothesisEngine.operators.mutation, hypothesisEngine.operators.replacement, hypothesisEngine.operators.selection, hypothesisEngine.fitness.trading_fitness, hypothesisEngine.fitness.trading_fitness.MAR_Ratio, hypothesisEngine.fitness.base_ff_classes, hypothesisEngine.fitness.base_ff_classes.base_ff, hypothesisEngine.fitness.expression, hypothesisEngine.fitness.fitness_helper, hypothesis_engine, hypothesisEngine.fitness.load_data, hypothesisEngine.fitness.utilities, hypothesisEngine.fitness.weights, hypothesisEngine.fitness.weights_to_bets[0m
+Start:	2020-02-10 06:09:37.361346
+-0.102	 : (High+Close)
+-0.1	 : (ema(Close,20))
+-0.1	 : (mean(Open,10))
+-0.099	 : (minval(Low,10))
+Exception type : KeyboardInterrupt 
+Exception message : 
+
+ Evolution failed. .Please check the parameters.

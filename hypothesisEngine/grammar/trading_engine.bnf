@@ -1,0 +1,29 @@
+<expr>  ::= (<foptr>(<expr>,<expr>,<day>))| 
+            (<fopbi>(<expr>,<day>))| 
+            (<fopun>(<expr>))| 
+            (<expr><matbi><expr>)  |
+            <var>
+<foptr> ::= corr | covariance
+<fopbi> ::= mean | 
+            median |   
+            stdev| 
+            back_diff| 
+            center| 
+            compress| 
+            scale| 
+            normalize_o|       
+            zscore|     
+            sma|
+            ema| 
+            fisher_norm| 
+            maxval| 
+            minval|       
+            gauss_filter|
+            ts_rank|
+            skew|
+            kurtosis
+<fopun> ::= fisher|invfisher|rank| -1* | 1/ |smooth
+<matbi> ::= + | - | * | /
+<var> ::= Open|High|Low|Close
+<day> ::=  5 | 10 | 15 | 20
+
