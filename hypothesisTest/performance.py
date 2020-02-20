@@ -125,14 +125,11 @@ def metrics(datasets_dict,clean_values_from_weights,cleaned_index_weights, daily
     curves['Long Contribution']       = equity_curve(starting_value,long_contribution)
     curves['Short Contribution']       = equity_curve(starting_value,short_contribution)
     
-    
-    #equity_curves = [strategy_curve,benchmark_curve,risk_free_curve]
-#    equity_curves = [strategy_curve, benchmark_curve, underlying_curve]
-    
-#    plots.equity_curves_plot(cleaned_index, curves)
+    curves['time_index']= cleaned_index
     df=pd.DataFrame.from_dict(curves)
-    df=df.reindex(cleaned_index)
+    df = df.set_index('time_index')
     res_dict['PLOT_CURVES_DATA'] =df
+    
     
     
     
