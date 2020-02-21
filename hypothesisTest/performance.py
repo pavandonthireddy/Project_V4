@@ -14,6 +14,7 @@ def metrics(datasets_dict,clean_values_from_weights,cleaned_index_weights, daily
     from scipy import stats
     from scipy.stats import norm
     from scipy.stats import kurtosis, skew
+
     
     
     datasets            = datasets_dict
@@ -116,7 +117,7 @@ def metrics(datasets_dict,clean_values_from_weights,cleaned_index_weights, daily
     def equity_curve(amount,ret):
         ret = hf.shift_array(ret,1,0)
         return amount*np.cumprod(1+ret)
-    
+
     curves = dict()
     curves['Strategy']   = equity_curve(starting_value,strategy_daily_returns)
     curves['Buy & Hold Underlying'] = equity_curve(starting_value,underlying_daily_returns)
@@ -124,12 +125,11 @@ def metrics(datasets_dict,clean_values_from_weights,cleaned_index_weights, daily
     curves['Risk free Asset']  = equity_curve(starting_value,rf_returns)
     curves['Long Contribution']       = equity_curve(starting_value,long_contribution)
     curves['Short Contribution']       = equity_curve(starting_value,short_contribution)
-    
+
     curves['time_index']= cleaned_index
     df=pd.DataFrame.from_dict(curves)
     df = df.set_index('time_index')
     res_dict['PLOT_CURVES_DATA'] =df
-    
     
     
     
@@ -296,7 +296,12 @@ def metrics(datasets_dict,clean_values_from_weights,cleaned_index_weights, daily
     
     from sklearn.metrics import precision_recall_fscore_support as score
     precision, recall, fscore, support = score(sign_profits_final, sign_positions_final)
-
+    
+    decimals = 3
+    precision = np.round(precision,decimals)
+    recall = np.round(recall,decimals)
+    fscore = np.round(fscore,decimals)
+    support = np.round(support,decimals)
     try:
         res_dict['CLASSIFICATION_DATA']= {'Class' :['-1','0','1'], 'Precision':list(precision),'Recall':list(recall),'F-Score':list(fscore),'Support':list(support) }
         res_dict['CLASSIFICATION_DATA']=pd.DataFrame(res_dict['CLASSIFICATION_DATA'])
@@ -311,7 +316,7 @@ def metrics(datasets_dict,clean_values_from_weights,cleaned_index_weights, daily
     import statsmodels.formula.api as sm # module for stats models
     from statsmodels.iolib.summary2 import summary_col
     
-    def assetPriceReg(excess_ret, fama):
+    def assetPriceReg(excess_ret, fama, t_decimals,coeff_decimals):
         
         df_stock_factor = pd.DataFrame({'ExsRet':excess_ret, 'MKT':fama[:,0], 'SMB':fama[:,1],'HML':fama[:,2], 'RMW':fama[:,3],'CMA':fama[:,4]})
         
@@ -319,18 +324,18 @@ def metrics(datasets_dict,clean_values_from_weights,cleaned_index_weights, daily
         FF3 = sm.ols( formula = 'ExsRet ~ MKT + SMB + HML', data=df_stock_factor).fit(cov_type='HAC',cov_kwds={'maxlags':1})
         FF5 = sm.ols( formula = 'ExsRet ~ MKT + SMB + HML + RMW + CMA', data=df_stock_factor).fit(cov_type='HAC',cov_kwds={'maxlags':1})
 
-        CAPMtstat = CAPM.tvalues
-        FF3tstat = FF3.tvalues
-        FF5tstat = FF5.tvalues
+        CAPMtstat = np.round(CAPM.tvalues,t_decimals)
+        FF3tstat = np.round(FF3.tvalues,t_decimals)
+        FF5tstat = np.round(FF5.tvalues, t_decimals)
     
-        CAPMcoeff = CAPM.params
-        FF3coeff = FF3.params
-        FF5coeff = FF5.params
+        CAPMcoeff = np.round(CAPM.params, coeff_decimals)
+        FF3coeff = np.round(FF3.params, coeff_decimals)
+        FF5coeff = np.round(FF5.params, coeff_decimals)
     
         # DataFrame with coefficients and t-stats
-        results_df = pd.DataFrame({'CAPMcoeff':CAPMcoeff,'CAPMtstat':CAPMtstat,
-                                   'FF3coeff':FF3coeff, 'FF3tstat':FF3tstat,
-                                   'FF5coeff':FF5coeff, 'FF5tstat':FF5tstat},
+        results_df = pd.DataFrame({'CAPM_coeff':CAPMcoeff,'CAPM_tstat':CAPMtstat,
+                                   'FF3_coeff':FF3coeff, 'FF3_tstat':FF3tstat,
+                                   'FF5_coeff':FF5coeff, 'FF5_tstat':FF5tstat},
         index = ['Intercept', 'MKT', 'SMB', 'HML', 'RMW', 'CMA'])
     
     
@@ -343,7 +348,7 @@ def metrics(datasets_dict,clean_values_from_weights,cleaned_index_weights, daily
         
         return dfoutput,results_df
     
-    _,res_dict['FACTOR_RES']= assetPriceReg(excess_returns, fama_factors)
+    _,res_dict['FACTOR_RES']= assetPriceReg(excess_returns, fama_factors,2,5)
 
    
 
