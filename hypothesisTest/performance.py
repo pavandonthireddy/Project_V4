@@ -309,7 +309,7 @@ def metrics(datasets_dict,clean_values_from_weights,cleaned_index_weights, daily
     except:
         res_dict['CLASSIFICATION_DATA']= {'Class' :['-1','0','1'], 'Precision':['NaN','NaN','NaN'],'Recall':['NaN','NaN','NaN'],'F-Score':['NaN','NaN','NaN'],'Support':['NaN','NaN','NaN'] }
         res_dict['CLASSIFICATION_DATA']=pd.DataFrame(res_dict['CLASSIFICATION_DATA'])
-
+        res_dict['CLASSIFICATION_DATA'] = res_dict['CLASSIFICATION_DATA'].set_index('Class')
 
     #############################################################################################
     # G. Factor Analysis

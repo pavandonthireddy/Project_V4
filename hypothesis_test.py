@@ -22,7 +22,7 @@ params['STARTING VALUE']                  = 20000000
 params['COST THRESHOLD BPS']              = 5
 params['ADV THRESHOLD PERCENTAGE']        = 10
 params['COMMISSION BPS']                  = 0.1
-params['STRATEGY EXPRESSION']             = '(High+Close)'#'mean(-rank(Volume)*(gauss_filter(High,5)-gauss_filter(Open,5)),5)'
+params['STRATEGY EXPRESSION']             = '(High+close)'#'mean(-rank(Volume)*(gauss_filter(High,5)-gauss_filter(Open,5)),5)'
 
 
 
